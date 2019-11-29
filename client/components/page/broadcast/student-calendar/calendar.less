@@ -1,0 +1,57 @@
+.student-calendar-container{
+    width: 370px;
+    height: 430px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 6px 14px 4px rgba(12,173,196,0.11);
+    border-radius:18px;
+    overflow: hidden;
+    .calendar-header-wrapper{
+        padding: 0 10px;
+        img, .calendar-caret{
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .calendar-date{
+        color:rgba(77,77,77,1);
+        font-size:20px;
+    }
+    .events-date{
+        padding: 2px;
+        text-align: center;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+    }
+    
+    .events-date-background {
+        box-shadow: 0 0 0 1px rgba(212,212,212,1) inset;
+        background:rgba(212,212,212,1);
+        color: #fff;
+        position: relative;
+        z-index: 10;
+    }
+    .ant-fullcalendar-selected-day .ant-fullcalendar-value {
+        position: relative;
+        z-index: 10;
+        color: #fff;
+        background: #E16DD8;
+        box-shadow: 0 0 0 1px #E16DD8 inset;
+    }
+    .date-item{
+        width:4px;
+        height:4px;
+        background:rgba(2,188,235,1);
+        border-radius: 14px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }  
+  
+}
+
+.ant-fullcalendar{
+    border: none !important;
+}

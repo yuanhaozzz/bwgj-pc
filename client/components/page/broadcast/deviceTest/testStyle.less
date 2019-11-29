@@ -1,0 +1,171 @@
+.test-stage-module {
+  width: 480px;
+  height: 270px;
+  margin: 22px auto 0;
+  box-sizing: border-box;
+
+  .stage-video {
+    border-radius: 20px;
+    border: 1px solid #D1D1D1;
+  }
+
+  .test-stage-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    // 音频测试
+    .audio-state {
+      width: 100%;
+      text-align: center;
+
+      .audio-pause {
+        width: 150px;
+        height: 150px;
+        margin: 20px auto;
+        border: 4px solid #03BEEC;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          display: block;
+          width: 6px;
+          margin: 0 4px;
+          background: #03BEEC;
+          border-radius: 8px;
+
+          &:nth-child(1) {
+            height: 36px;
+            -webkit-animation-delay: .3s;
+          }
+
+          &:nth-child(2) {
+            height: 54px;
+            -webkit-animation-delay: .4s;
+
+          }
+
+          &:nth-child(3) {
+            height: 74px;
+            -webkit-animation-delay: .6s;
+          }
+
+          &:nth-child(4) {
+            height: 54px;
+            -webkit-animation-delay: .8s;
+          }
+
+          &:nth-child(5) {
+            height: 36px;
+            -webkit-animation-delay: 1s;
+          }
+        }
+      }
+    }
+
+    // 音频测试动画
+    .audio-play {
+
+      span {
+        -webkit-animation: bodong 0.5s infinite ease;
+
+        @-webkit-keyframes bodong {
+          0% {
+            height: 36px;
+            background: bule;
+          }
+
+          30% {
+            height: 54px;
+            background: bule;
+          }
+
+          60% {
+            height: 74px;
+            background: bule;
+          }
+
+          80% {
+            height: 54px;
+            background: bule;
+          }
+
+          100% {
+            height: 36px;
+            background: bule;
+          }
+        }
+      }
+    }
+
+    // 麦克风测试
+    .mike-stage {
+      width: 100%;
+
+      .mike-stage-con {
+        width: 100%;
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .mike-stage-img {
+          width: 140px;
+          height: 140px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .mike-stage-wave {
+          height: 50px;
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          background: #B2B2B2;
+
+          .mike-wave-item {
+            position: relative;
+            z-index: 2;
+          }
+
+          .even {
+            width: 14px;
+            height: 50px;
+            background: #ffffff;
+          }
+
+          .odd {
+            width: 9px;
+            height: 50px;
+            border-radius: 5px;
+          }
+
+          .mike-wave-bg {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background: #03BEEC;
+          }
+        }
+      }
+
+    }
+
+    .stage-message {
+      color: #4D4D4D;
+      font-size: 18px;
+      font-family: DFYuanGB-W7, DFYuanGB;
+      text-align: center;
+    }
+  }
+}

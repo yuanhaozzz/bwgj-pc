@@ -1,0 +1,58 @@
+.home-card-wrapper{
+    position: relative;
+    background:rgba(245,245,245,1);
+    border-radius:18px;
+    padding: 33px 20px;
+    cursor: pointer;
+    border:1px solid rgba(245,245,245,1);
+    box-sizing: border-box;
+    .home-card-left{
+        width: 70%;
+    }
+    .home-card-left-title{
+        font-size:15px;
+        color:rgba(77,77,77,1);
+        font-weight: 900;
+        height: 45px;
+        padding-bottom: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .home-card-left-lesson, .home-card-left-date{
+        font-size:13px;
+        color:rgba(128,128,128,1);
+    }
+    .home-card-left-date{
+        margin-top: 7px;
+    }
+    .home-card-right{
+        width: 100px;
+        height: 100px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .canvas{
+        width: 100px;
+        height: 100%;
+        // height: 100%;
+    }
+    .home-card-refund {
+        width: 62px;
+        height: 50px;
+        position: absolute;
+        right: 20px;
+        bottom: 30px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.home-card-wrapper:hover{
+    border: 1px solid #00E2FA;
+    box-sizing: border-box;
+}
